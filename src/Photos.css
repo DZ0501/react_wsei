@@ -1,0 +1,118 @@
+.photos-container {
+    width: 70%;
+    margin: 8vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#photos-header {
+    margin-bottom: 20px;
+}
+
+.photos-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photo-item {
+    cursor: pointer;
+}
+
+.photo-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.photo-item img:hover {
+    transform: scale(1.05);
+}
+
+.photo-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.photo-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* src/Photos.css */
+/* ... (existing styles) ... */
+
+.photo-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.photo-modal-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    margin-bottom: 10px;
+    /* Add margin between the image and the button */
+}
+
+.photo-modal-content button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.photo-modal-content button:hover {
+    background-color: #333333;
+}
+
+.album-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .album-info p {
+    font-weight: bold;
+  }
+  
+  .album-info a {
+    color: #333;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .album-info a:hover {
+    color: #555;
+  }
+  
+  .search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    width: 200px;
+  }
+  

@@ -1,0 +1,40 @@
+/* src/UserTodos.css */
+
+.user-todos-container {
+    width: 70%;
+    margin: 7vh auto;
+    margin-bottom: 50px; /* Add space to the bottom of the page */
+  }
+  
+  #user-todos-header {
+    margin-bottom: 20px;
+  }
+  
+  .user-todos-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+  
+  .user-todos-item {
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+    background-color: #c9c9c9;
+    border: 1px solid #999; /* Thin border with a different color */
+  }
+  
+  .user-todos-item.completed {
+    background-color: #00b118bd; /* Lighter color for completed todos */
+  }
+  
+  .user-todos-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Add more styles as needed for UserTodos.css */
+  
