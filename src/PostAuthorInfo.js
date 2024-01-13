@@ -1,4 +1,3 @@
-// PostsAuthorInfo.js
 import React, { useState, useEffect } from 'react';
 import './PostAuthorInfo.css';
 
@@ -33,7 +32,6 @@ const PostsAuthorInfo = ({ userId, onClose }) => {
             <p>Website: {userInfo.website}</p>
             <p>Company: {userInfo.company.name}</p>
             <p>Address: {userInfo.address.street}, {userInfo.address.suite}, {userInfo.address.city}</p>
-            {/* Add more user info fields as needed */}
           </>
         ) : (
           <p>Loading user information...</p>

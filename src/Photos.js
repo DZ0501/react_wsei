@@ -50,7 +50,6 @@ const Photos = () => {
 
   return (
     <div className="photos-container">
-      {/* Search fields side by side */}
       <div className="search-container">
         <input
           type="text"

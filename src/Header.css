@@ -1,4 +1,3 @@
-/* src/Header.css */
 .header {
   background-color: rgb(53, 53, 53);
   color: #fff;
@@ -46,7 +45,6 @@
 
 .welcome-message {
   margin-right: 12px;
-  /* Add margin to create space between welcome message and logout button */
 }
 
 .login-bar button {

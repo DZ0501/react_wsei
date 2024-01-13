@@ -55,9 +55,6 @@
     pointer-events: auto;
 }
 
-/* src/Photos.css */
-/* ... (existing styles) ... */
-
 .photo-modal-content {
     display: flex;
     flex-direction: column;
@@ -69,7 +66,6 @@
     max-width: 100%;
     max-height: 80vh;
     margin-bottom: 10px;
-    /* Add margin between the image and the button */
 }
 
 .photo-modal-content button {

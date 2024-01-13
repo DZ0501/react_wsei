@@ -1,7 +1,6 @@
-// src/UserTodos.js
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import './UserTodos.css'; // Import the updated UserTodos.css stylesheet
+import './UserTodos.css'; 
 
 const UserTodos = () => {
   const [todos, setTodos] = useState([]);

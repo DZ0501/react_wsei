@@ -1,8 +1,7 @@
-// src/UserList.js
 import React, { useState, useEffect } from 'react';
 import UserAlbums from './UserAlbums';
 import UserTodos from './UserTodos';
-import UserPosts from './UserPosts'; // Import UserPosts component
+import UserPosts from './UserPosts'; 
 import { useNavigate } from 'react-router-dom';
 import './UserList.css';
 
@@ -12,7 +11,7 @@ const UserList = () => {
   const [showAlbums, setShowAlbums] = useState(false);
   const [showTodos, setShowTodos] = useState(false);
   const [showPosts, setShowPosts] = useState(false);
-  const [searchQuery, setSearchQuery] = useState(''); // New state for search query
+  const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -71,7 +70,6 @@ const UserList = () => {
     navigate(`/users/${userId}/posts`);
   };
 
-  // Filter users based on the search query
   const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -103,8 +101,6 @@ const UserList = () => {
           </li>
         ))}
       </ul>
-
-      {/* Move the search input below the user list */}
 
 
       {selectedUser && (

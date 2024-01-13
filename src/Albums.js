@@ -1,4 +1,3 @@
-// src/Albums.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Albums.css';
@@ -25,7 +24,6 @@ const Albums = () => {
     fetchAlbums();
   }, []);
 
-  // Logic for displaying page numbers
   const pageNumbers = [];
   const totalPageCount = Math.ceil(albums.length / albumsPerPage);
 
@@ -35,7 +33,6 @@ const Albums = () => {
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-  // Calculate indexes for current page
   const indexOfLastAlbum = currentPage * albumsPerPage;
   const indexOfFirstAlbum = indexOfLastAlbum - albumsPerPage;
   const currentAlbums = albums.slice(indexOfFirstAlbum, indexOfLastAlbum);

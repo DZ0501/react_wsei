@@ -1,4 +1,3 @@
-// src/Posts.js
 import React, { useState, useEffect } from 'react';
 import './Posts.css';
 import PostComments from './PostComments';

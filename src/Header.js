@@ -17,12 +17,11 @@ const Header = ({ onLogin }) => {
   
         const userData = await response.json();
   
-        console.log('User data:', userData);  // Log user data for debugging
   
         if (userData.length > 0) {
-          const { id, email } = userData[0]; // Extract email from user data
+          const { id, email } = userData[0]; 
           setLoggedIn(true);
-          onLogin({ id, username, email }); // Include email in the onLogin callback
+          onLogin({ id, username, email });
         } else {
           console.error('User not found');
         }
